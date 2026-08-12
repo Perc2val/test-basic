@@ -79,4 +79,19 @@ function ceasarCipher(x, y){
 
         
 }
-export {capitalize, reverseString, calculator, ceasarCipher}
+
+function analyzeArray(array){
+    const w = array.reduce((a, b) => a + b)/ array.length;
+    const x = array.length;
+    const y = Math.max(...array);
+    const z = Math.min(...array);
+    let object = {
+        average: w,
+        length: x,
+        max: y,
+        min: z,
+    };
+    return object
+
+}
+export {capitalize, reverseString, calculator, ceasarCipher, analyzeArray}

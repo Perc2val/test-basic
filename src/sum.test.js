@@ -1,4 +1,4 @@
-import { capitalize, reverseString, calculator, ceasarCipher } from "./sum";
+import { capitalize, reverseString, calculator, ceasarCipher, analyzeArray } from "./sum";
 
 
 test("capitalize a string", ()=>{
@@ -48,4 +48,12 @@ test("ceaserCipher shift 2", ()=>{
 
 test("ceaserCipher shift 3", ()=>{
     expect(ceasarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!")
+})
+
+test("analyzeArray(1,8,3,4,2,6", ()=>{
+    expect(analyzeArray([1,8,3,4,2,6])).toEqual({average: 4, min: 1, max: 8, length: 6})
+})
+
+test("analyzeArrayTwo(1,8,3,4,2,6,12,98,4,22", ()=>{
+    expect(analyzeArray([1,8,3,4,2,6,12,98,4,22])).toEqual({average: 16, min: 1, max: 98, length: 10})
 })
