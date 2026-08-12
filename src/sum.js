@@ -52,7 +52,6 @@ function ceasarCipher(x, y){
         }
         
     })
-    console.log(numbersTwo)
     numbersTwo
     .forEach(element => {
         let k = element.toString()
@@ -65,7 +64,6 @@ function ceasarCipher(x, y){
             ceasarArray.push(element)
         }
     })
-    console.log(ceasarArray)
     ceasarArray
     .forEach(element => {
         let k = element.toString()
